@@ -352,21 +352,34 @@
 
 
 
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#favoritPlayer">favoritPlayer</a>
+      
+    </div>
 
     <!--Todo: process Response Object and its headers, schema, examples -->
 
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "fullname" : "NicoleKenig",
+  "image-url" : "https://cloudinary.com/ladygaga",
+  "position" : 0.8008281904610115,
+  "teamname" : "joanne@26"
+}</code></pre>
 
     <h3 class="field-label">Produces</h3>
     This API call produces the following media types according to the <span class="header">Accept</span> request header;
     the media type will be conveyed by the <span class="header">Content-Type</span> response header.
     <ul>
-      <li><code>schema</code></li>
+      <li><code>application/json</code></li>
     </ul>
 
     <h3 class="field-label">Responses</h3>
     <h4 class="field-label">200</h4>
     Succesfully found the player
-        <a href="#"></a>
+        <a href="#favoritPlayer">favoritPlayer</a>
     <h4 class="field-label">401</h4>
     bad input parameter
         <a href="#"></a>
@@ -443,7 +456,6 @@
     <pre class="example"><code>[ {
   "date" : "09/05/21",
   "result" : "243",
-  "eventSchedule" : { },
   "hour" : "16:00",
   "fild" : "Blomfiled",
   "awayTeam" : "Macabi Haifa",
@@ -451,7 +463,6 @@
 }, {
   "date" : "09/05/21",
   "result" : "243",
-  "eventSchedule" : { },
   "hour" : "16:00",
   "fild" : "Blomfiled",
   "awayTeam" : "Macabi Haifa",
@@ -832,7 +843,7 @@
           <div class="param-desc"><span class="param-type">example: goal/ red/yellow tickect / injury / change player/ offense</span></div>
 <div class="param">hour (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> when its happend in hour </div>
 <div class="param">minute (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> when its happend in minute </div>
-<div class="param">EventDescription (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">EventDescription (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> what happend in the event </div>
           <div class="param-desc"><span class="param-type">example: Jovany rosso put goal at by passs he got from....</span></div>
     </div>  <!-- field-items -->
   </div>
@@ -852,7 +863,6 @@
           <div class="param-desc"><span class="param-type">example: Blomfiled</span></div>
 <div class="param">result (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
           <div class="param-desc"><span class="param-type">example: 243</span></div>
-<div class="param">eventSchedule (optional)</div><div class="param-desc"><span class="param-type"><a href="#object">Object</a></span>  </div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
