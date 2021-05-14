@@ -1,4 +1,4 @@
-# assignment-3-1-305715781_316299031
+# 305715781_316299031
 
 https://app.swaggerhub.com/apis-docs/naorsa198/football/1.0.0
 
